@@ -1,7 +1,30 @@
 /* Cascading stylesheet for the website */
 
 /* Text inside these asterisks and slashes are comments for human */
-
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  }
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
   a {
     color: blue; /* set the text color to blue here */
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
